@@ -1,0 +1,95 @@
+* { margin: 0; padding: 0; }
+
+.flex-column { height: 100%; /*allows both columns to span the full height of the browser window*/ display: flex; flex-direction: column; /*places the left and right headers above the bottom content*/ }
+
+.flex-container { flex-grow: 1; overflow-y: auto; }
+
+.flex-container-row { height: 95%; display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; align-content: flex-start; }
+
+.flex-item { color: #fff; font-size: 2em; padding: 40px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.item-chart1 { min-height: 50px; flex: 1 1 10%; }
+
+.item-chart2 { min-height: 50px; flex: 1 1 10%; }
+
+.item-chart3 { min-height: 50px; flex: 1 1 10%; }
+
+.item-pieChart { min-height: 50px; flex: 1 1 10%; }
+
+.flex-header { display: inline-flex; margin-bottom: auto; flex-shrink: 0; justify-content: flex-start; align-items: stretch; align-content: stretch; background-color: #434556; }
+
+.tablink { flex: 0 1 120px; background-color: #434556; color: #fff; border: none; outline: none; cursor: pointer; padding: 12px; font-size: 16px; text-align: center; text-decoration: none; }
+
+.tablink.active { background-color: #1e79b6 !important; }
+
+.tablink:hover { background-color: #0064ab; }
+
+.flex-footer { margin-top: auto; flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */ padding: 10px 20px; /*   font-size: 12px; */ }
+
+footer { background: #434556; color: #e2e3e9; }
+
+footer a:link { color: #57a1c7; background-color: transparent; text-decoration: none; outline: none; font-weight: 600; }
+
+footer a:visited { color: #b3dbe3; background-color: transparent; }
+
+#chart-legend { display: flex; justify-content: center; padding: 20px 0 20px 0; font-size: 12px; }
+
+#chart-legend .item { line-height: 12px; padding: 0 10px 0 5px; }
+
+#chart-legend .item.cases { background: #a52941; }
+
+#chart-legend .item.forecasted { background: #e38c4e; }
+
+#chart-legend .item.line { width: 20px; background: linear-gradient(to right, #448aff, #00bcd4, #1de9b6); }
+
+.map-container { height: 100%; }
+
+#map { width: 100%; height: 100%; }
+
+.mapboxgl-popup { font: 16px/20px Segoe UI, "Helvetica Neue", Arial, Helvetica, sans-serif; }
+
+.legend { font-family: "Segoe UI", "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 12px; line-height: 20px; color: #e2e3e9; /*   background-color: #2d2e39; */ background: rgba(45, 46, 57, 0.9); border-radius: 6px; bottom: 30px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); padding: 10px; position: absolute; right: 10px; /*   height: 25%; */ z-index: 1; }
+
+.legend h4 { margin: 0 0 10px 0; text-align: left; font-size: 16px; font-weight: 600; }
+
+.legend div span { border-radius: 50%; display: inline-block; height: 16px; margin-right: 8px; width: 16px; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+html { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body { display: flex; flex-direction: column; background: #2d2e39; color: #fff; font: 100% Segoe UI; line-height: 1.5; }
+
+main { height: 100%; }
+
+#title { text-align: center; padding: 10px; font-size: 24px; color: #fff; }
+
+h1 { font-size: 32px; color: #fff; }
+
+h2 { font-size: 24px; color: #fff; }
+
+h3 { font-size: 20px; color: #fff; }
+
+.content { padding: 0.5em 16px; height: 100%; }
+
+.content-container { flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */ padding: 20px; }
+
+ul { list-style: none; margin: 1em; text-align: left; color: #fff; }
+
+.post a:link { color: #f1f1f4; background-color: transparent; text-decoration: none; outline: none; }
+
+.post a:visited { color: #b3dbe3; background-color: transparent; }
+
+.post a:hover { color: #3a8dbf; background-color: transparent; }
+
+main a:link { color: #57a1c7; background-color: transparent; text-decoration: none; outline: none; font-weight: 600; }
+
+main a:visited { color: #b3dbe3; background-color: transparent; }
+
+.chart-container { margin: auto; width: 540px; }
+
+.piechart-container { margin: auto; width: 630px; padding: 20px 0; }
+
+/*# sourceMappingURL=styles.css.map */
